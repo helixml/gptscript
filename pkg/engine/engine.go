@@ -350,7 +350,7 @@ func addUpdateSystem(ctx Context, tool types.Tool, msgs []types.CompletionMessag
 	}
 
 	msg := types.CompletionMessage{
-		Role:    types.CompletionMessageRoleTypeSystem,
+		Role:    types.CompletionMessageRoleTypeUser,
 		Content: types.Text(strings.Join(instructions, "\n")),
 	}
 
